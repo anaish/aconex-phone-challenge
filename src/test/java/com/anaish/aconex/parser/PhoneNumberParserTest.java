@@ -31,7 +31,7 @@ public class PhoneNumberParserTest {
         fail("Not Implemented");
     }
     @Test
-    public void testPuncutationIgnored(){
+    public void testPunctuationIgnored(){
         fail("Not Implemented");
     }
     @Test
