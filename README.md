@@ -9,7 +9,7 @@ A program that shows a user possible matches for a list of provided phone number
 - For each phone number read, output all possible word replacements from a dictionary.
 - Replace every digit of the provided phone number with a letter from a dictionary word; however, if no match can be made, a single digit can be left as is
 - No two consecutive digits can remain unchanged
-- Skips over a digit (producing no output) if a match cannot be made
+- Skips over a phone number (producing no output) if a match cannot be made
 - Allow the user to set a dictionary with the -d command-line option
 - The dictionary is expected to have one word per line
 - All punctuation and whitespace should be ignored in both phone numbers and the dictionary file
