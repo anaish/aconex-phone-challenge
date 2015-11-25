@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/anaish/aconex-phone-challenge.svg)](https://travis-ci.org/anaish/aconex-phone-challenge)
+
 # aconex-phone-challenge
 
 A program that shows a user possible matches for a list of provided phone numbers
