@@ -2,6 +2,7 @@ package com.anaish.aconex.dictionary;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -15,7 +16,7 @@ public class DictionaryParser {
 
     public List<String> parseDictionary(final String dictionaryFile) throws IOException {
 
-        return Files.readAllLines(Paths.get(dictionaryFile), Charset.forName("UTF-8"))
+        return Files.readAllLines(Paths.get(dictionaryFile), Charset.forName(StandardCharsets.UTF_8.name()))
                 .stream()
                 .collect(Collectors.toList());
 

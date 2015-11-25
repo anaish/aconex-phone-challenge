@@ -42,6 +42,7 @@ public class CreatePhoneNumbers {
 
     private static void readFromStdIn(String dictionaryFile) {
         try {
+            System.out.println("Enter numbers,type 'exit' to quit");
             readInput(System.in, dictionaryFile);
         } catch (IOException e) {
             System.out.println("Unable to read input");
@@ -64,15 +65,18 @@ public class CreatePhoneNumbers {
         final List<String> dictionaryWordList = dictionaryParser.parseDictionary(dictionaryFile);
         final DictionaryWords dictionaryWords = new DictionaryWords(dictionaryWordList);
         final PhoneNumberParser phoneNumberParser = new PhoneNumberParser(dictionaryWords);
-        final List<Set<String>> matches = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new InputStreamReader(in))) {
             String line;
             while((line = br.readLine()) != null) {
-                Set<String> strings = phoneNumberParser.matchPhoneNumber(line);
-                matches.add(strings);
+                if(line.equalsIgnoreCase("exit")){
+                    break;
+                } else {
+                    Set<String> strings = phoneNumberParser.matchPhoneNumber(line);
+                    strings.stream().forEach(System.out::println);
+                }
             }
         }
-        matches.stream().forEach(matchSet -> matchSet.stream().forEach(System.out::println));
+
 
     }
 }
