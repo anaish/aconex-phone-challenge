@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 /**
  * Created by Andrew on 11/23/2015.
+ * Parses a dictionary file
  */
 public class DictionaryParser {
 

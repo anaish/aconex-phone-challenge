@@ -5,11 +5,11 @@ import java.util.stream.IntStream;
 
 /**
  * Created by Andrew on 11/23/2015.
+ * Processes dictionary words
  */
 public class DictionaryWords {
 
     private final List<String> words;
-    private int wordCount = 0;
     private int maxWordLength = 0;
 
     private Map<String, Set<String>> wordMap = new HashMap<>();
@@ -39,7 +39,6 @@ public class DictionaryWords {
 
     public DictionaryWords(final List<String> listOfWords){
         this.words = listOfWords;
-        this.wordCount = listOfWords.size();
         this.addAllWords();
     }
 

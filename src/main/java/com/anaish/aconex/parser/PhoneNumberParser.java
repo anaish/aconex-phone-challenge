@@ -14,6 +14,8 @@ import java.util.stream.Collectors;
 
 /**
  * Created by Andrew on 11/23/2015.
+ * Parses a phone number file
+ * Matches phone numbers
  */
 public class PhoneNumberParser {
 

@@ -30,18 +30,26 @@ DIGIT | CHARACTERS |
 
 # Design
 
+Basic command pattern for input, parser for text file processing, factory for object creation.
+
 # Runtime Requirements
 
 - JRE 1.8+
 
-# Installation
-
 # Usage
+
+java -jar:<jar name> com.anaish.aconnex.CreatePhoneNumbers [-p <phone number file>] <-d dictionary file>
 
 # Inputs
 
-# Configuration
+Sample Phone input file:
 
-# Copyright
+/src/test/resources/mock-phone-number-file-big.txt
+
+Sample dictionary file:
+
+/src/test/resources/mock-dictionary-file.txt
+
+
 
 

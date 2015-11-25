@@ -11437,7 +11437,7 @@ inoperative
 inopportune
 inordinate
 inorganic
-input
+commandInput
 inquest
 inquietude
 inquire

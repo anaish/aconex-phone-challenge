@@ -3,12 +3,13 @@ package com.anaish.aconex.parser;
 import com.anaish.aconex.dictionary.DictionaryWords;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
  * Created by Andrew on 11/23/2015.
+ * Holds matched words
+ * Processes numbers and matches them with words
  */
 public class WordHolder {
 

@@ -1,16 +1,15 @@
-package com.anaish.aconex.input;
-
+package com.anaish.aconex.command;
 
 import java.io.File;
 
 /**
  * Created by Andrew on 11/23/2015.
+ * Holds command results
  */
-public class InputResult {
+public class CommandInputResult {
 
     private String phoneNumberFile;
     private String dictionaryFile;
-
 
     public String getPhoneNumberFile() {
         return phoneNumberFile;
@@ -26,6 +25,11 @@ public class InputResult {
 
     public void setDictionaryFile(String dictionaryFile) {
         this.dictionaryFile = dictionaryFile;
+    }
+
+    public boolean isReadFromFile(){
+        final String phoneNumberFile = this.getPhoneNumberFile();
+        return phoneNumberFile !=null && new File(phoneNumberFile).exists();
     }
 
 }
