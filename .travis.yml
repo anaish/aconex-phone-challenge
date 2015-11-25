@@ -5,4 +5,4 @@ jdk:
 before_install:
  - chmod +x gradlew
  
- script: ./gradlew jar -i
+ script: ./gradlew jar --info

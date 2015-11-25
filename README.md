@@ -40,7 +40,7 @@ Basic command pattern for input, parser for text file processing, factory for ob
 
 # Usage
 
-java -jar:<jar name> com.anaish.aconnex.CreatePhoneNumbers [-p <phone number file>] <-d dictionary file>
+Usage: java -jar aconex-phone-challenge-1.0.jar [-p phone_number_file] <-d dictionary_file>
 
 # Inputs
 
