@@ -4,6 +4,6 @@ jdk:
 
 before_install:
  - chmod +x gradlew
- - chmod 777 src/test/resources/*.txt
+ - chmod +x src/test/resources/*.txt
  
 script: ./gradlew test jar --info
