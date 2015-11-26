@@ -6,4 +6,4 @@ before_install:
  - chmod +x gradlew
  - chmod 777 src/test/resources/*.txt
  
-script: ./gradlew jar --info
+script: ./gradlew test jar --info
